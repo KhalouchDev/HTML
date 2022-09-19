@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--defines meta data in an html document-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--always goes in head, wont be displayed in page-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--used by browsers, search engines, and other web services-->
+        <meta name="description" content="This is a website">
+        <link rel="stylesheet" href="styles.css"> <!--defines the relationship between current document and external document-->
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Website</h1> <!---Headers go from 1 to 6 (big -> small)-->
+        <hr/> <!--Used to seperate content-->
+        <p>This is a paragraph</p> <!--Paragraph-->
+        <br/> <!--Adds empty line-->
+        <p><em>italic</em></p>  <!--<em> emphasizes the importance of word, <i> offsets the word-->
+        <p><b>bold</b></p>  <!--bold is used to draw attention without indicating its more important-->
+        <p><strong>strong</strong></p> <!--strong means that text has greater importance-->
+        <p><big>big</big> normal <small>small</small></p> <!--use to make text bigger / smaller-->
+        <p>H<sub>2</sub>O</p> <!--used to make a subscript-->
+        <p>10<sup>2</sup></p> <!--used to make a superscript-->
+        <a href="https://www.w3schools.com">w3schools</a> <!--hyperlink, works with images-->
+        <br><abbr title="Internation General Certificate of Secondary Education">IGCSE</abbr> <!--abbriviation, can be used with <dfn>-->
+        <address> <!--defines contact information, displayed in italic-->
+            Author: <a href="mailto:khalouchdev@gmail.com">Khaled Murrar</a> <br>
+            Address: Amman, Swieleh <br>
+            website.com
+            Jordan
+        </address>
+        <!--area-->
+        <article>   <!--specifies independent self-contained content-->
+            <header> <!--container for introductory content-->
+                <h2>Article</h2>
+                <p>This is an article</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, sed.</p>
+        </article>
+        <aside> <!--defines content aside from the content placed in it, content should be indirectly related to surrounding content-->
+            <h4>Aside tag</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, aliquam?</p>
+        </aside>
+        <audio controls>
+            <source src="discord_disconnect.mp3" type="audio/mp3">
+            <!--Adding multiple sources with different types helps with browser support (OGG,  WAV, MP3)-->
+        </audio>
+        <!--base-->
+        <p>Winner: <bdi>ياسر</bdi></p> <!--bdi stands for bi-directional isolation, isolates part of the text that might be formatted in a different way-->
+        <bdo dir="rtl">Right to left</bdo> <!--bdo stand for bi-direction override-->
+        <br><bdo dir="ltr">Left to right</bdo> <!--used to override text direction-->
+        <br>
+        <h2>Blockquote</h2>
+        <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+            Blockquote tag specifies a section that is quoted from another source
+            Browsers usually indent blockquote elements.
+        </blockquote> <br>
+        <button type="button">A button</button> <!--always specify the type-->
+        <p><cite>The Handbook of Robotics</cite> by Bruno Siciliano and Oussama Khatib</p> <!--defines title of creative work-->
+        <p>The HTML <code>button</code> defines a clickable button</p>
+        <p><data value=1834>Tomatos</data><p> <!--assosiates tomatos with machine-readable number-->
+        <dl> <!--defines description list-->
+            <dt>Coffee</dt> <!--defines term/name in description list-->
+            <dd>Black hot drink</dd> <!--used to decrive term/name in description list-->
+            <dt>Milk</dt> 
+            <dd>White cold drink</dd> <!--used in conjunction with <dl> and <dt>-->
+        </dl>
+        <p>Queen Elizibeth (II) <del>is</del> was queen of the UK</p> <!--defines text that has been deleted from a document, brozers usually strike a line through it-->
+        <details> <!--defines addition details the user can open on demand-->
+            <summary>Lorem Ipsum</summary> <!--used in conjunction with <details>-->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam quo consectetur ducimus perferendis ratione animi accusamus illo ad est aperiam!</p>
+        </details>
+        <p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p> <!--define element specifies a term that is going to be defines within the content-->
+        <hr>
+        <h3>Dialog</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+        <p>Some text</p>
+        <dialog>This is an open dialog window</dialog>
+        <p>Some text</p>
+        <p>Some text</p>
+        <hr>
+        <div> <!--defines a divition or section in the HTML document, used as a container which is then styled with CSS-->
+            <h3>This is the heading of the div element</h3>
+            <p>This is some text in the div element</p>
+        </div> <!--can be easily styled by using the class or id attribute, anything can be put in div-->
+        <hr>
+        <embed src="SciFiPistol.png" type="image/png" width="300" height="200"> <!--defines container for external resrouce such as web page, image, video, or plug-in application-->
+        <hr>
+        <h3>Form</h3>
+        <form> <!--create HTML form for user input-->
+            <fieldset> <!--group (draw box) around related elements in form-->
+                <legend>personal</legend> <!--used to define caption for fieldset-->
+                <label for="fname">First name:</label> <!--defines label for several elements-->
+                <input type="text" id="fname" name="fname"><br><br> <!--specifies field where user can eneter data-->
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </fieldset>
+        </form>
+        <hr>
+        <h3>Figure</h3>
+        <figure> <!--specifies seil-contained content-->
+            <img src="SciFiPistol.png" alt="SciFi Pistol" width="300" height="200"> <!--used to embed image in HTML page-->
+            <figcaption>Fig.1 - SciFi Piston</figcaption> <!--define caption for figure element-->
+        </figure>
+        <hr>
+        <h3>Footer</h3>
+        <footer> <!--defines footer for document or section-->
+            <p>Author: Khaled Murrar</p>
+        </footer>
+        <hr>
+        <iframe src="https://www.w3schools.com" title="W3Schools Tutorials"></iframe> <!--specifies an inline frame, used to embed another document within the current document-->
+        <p><ins>Underline</ins></p> <!--underlines text-->
+        <p>Pres <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p> <!--define keyboard input-->
+        <h3>Ordered list</h3>
+        <ol> <!--defines ordered list, can be numerical or alphabetical-->
+            <li>Coffee</li> <!--defines list element-->
+            <li>Tea</li> <!--used with <ol> and <ul>-->
+            <li>Milk</li>
+        </ol>
+        <h3>Unordered list</h3>
+        <ul> <!--defines unordered list-->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <hr>
+        <!--<main> defines the main part of a document
+            content inside <main> should be unique to the document
+            it should not contain any content that is repeated across documents (i.e. copyright info, sidebars, etc..)
+            there must not be more that one <main> in a document-->
+        <main>
+            <h1>Most Popular Browsers</h1>
+            <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+          
+            <article>
+              <h2>Google Chrome</h2>
+              <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+          
+            <article>
+              <h2>Mozilla Firefox</h2>
+              <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+            </article>
+          
+            <article>
+              <h2>Microsoft Edge</h2>
+              <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+            </article>
+        </main>
+        <hr>
+        <h3>Map</h3>
+        <img src="workplace.jpg" alt="workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap"> <!--defines image map, image map is image with clickable areas-->
+            <area shape="rect" coords="34,44,270,350" href="https://www.amazon.com/Dell-17-0-inch-Touchscreen-Display-i7-12700H/dp/B09YC1X778/ref=sr_1_3?keywords=laptop&qid=1663089790&sr=8-3" alt="Computer"> <!--defines area inside image map-->
+            <area shape="rect" coords="290,172,333,250" href="https://www.amazon.com/Samsung-Smartphone-Unlocked-Brightest-Processor/dp/B09V1NGFN4/ref=sr_1_3?crid=2AEVZHGV5NJXT&keywords=phone&qid=1663089831&sprefix=phone%2Caps%2C271&sr=8-3" alt="Phone">
+            <area shape="circle" coords="337,300,44" href="https://www.amazon.com/MCCAFE-Premium-Roast-Coffee-K-CUP/dp/B00TY15GO6/ref=sr_1_6?crid=785AZGSOWLN5&keywords=coffee&qid=1663089862&sprefix=coffee%2Caps%2C303&sr=8-6" alt="Coffee">
+        </map>
+        <p>Don't forget to buy <mark>milk</mark></p> <!--highlights text-->
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disc_c" value="2" min="0" max="10">2 out of 10</meter> <!--defines scalar measurement, should NOT be used to indicate progress-->
+    </body>
+</html>
